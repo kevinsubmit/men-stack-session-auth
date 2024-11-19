@@ -3,7 +3,8 @@ const validSession = (req, res, next) => {
     next();
   }
   else {
-    res.send("session not found")
+    // res.send("session not found");
+    res.redirect("/");
   }
 }
 
