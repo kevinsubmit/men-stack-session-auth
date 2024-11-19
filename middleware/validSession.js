@@ -3,7 +3,7 @@ const validSession = (req, res, next) => {
     next();
   }
   else {
-    res.send("User not authenticated")
+    res.send("session not found")
   }
 }
 
